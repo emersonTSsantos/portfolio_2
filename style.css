@@ -126,6 +126,10 @@ header .content p{
     color: #ccc;
 }
 
+header .content .curriculo a{
+    font-size: 20px;
+}
+
 header .image{
     position: relative;
 }
