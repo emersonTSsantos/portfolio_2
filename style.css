@@ -132,6 +132,20 @@ header .content .curriculo a{
 
 header .image{
     position: relative;
+    margin-left: 15%;
+}
+
+@media (max-width: 768px) {
+    header .image {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header .image {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 header .image::before{
@@ -140,9 +154,9 @@ header .image::before{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 38rem;
+    font-size: 40rem;
     font-weight: 400;
-    line-height: 20rem;
+    line-height: 40rem;
     color: #1d4ed8;
     opacity: 0.2;
     z-index: -100;
@@ -175,9 +189,10 @@ section .header{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .skill {
         grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }    
 
@@ -188,6 +203,10 @@ section .header{
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
+}
+
+.hidden {
+    margin-top: 30px;
 }
 
 .skill .card:hover{
@@ -245,12 +264,14 @@ section .header{
 @media (max-width: 1024px) {
     .projects {
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
     .projects {
         grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }
 
@@ -263,6 +284,14 @@ section .header{
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .projects .card{
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 300px;
+    }
 }
 
 .projects .card:hover{
