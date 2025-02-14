@@ -132,7 +132,7 @@ header .content .curriculo a{
 
 header .image{
     position: relative;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 @media (max-width: 768px) {
@@ -372,11 +372,10 @@ footer .column .socials{
 footer .column .socials a{
     color: #ccc;
     border: 1px solid #ccc;
-    padding: 5px 10px;
-    font-size: 1.25rem;
+    padding: 5px 15px;
+    font-size: 2rem;
     border-radius: 100%;
     transition: all 0.3s ease;
-    font-size: 40px;
 }
 
 footer .column .socials a:hover{
