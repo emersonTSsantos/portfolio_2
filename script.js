@@ -1,22 +1,34 @@
-function scrollToElement(elementSelector, instance = 0) {
-    const elements = document.querySelectorAll(elementSelector);
-    if (elements.length > instance) {
-        elements[instance].scrollIntoView({ behavior: 'smooth' });
+document.addEventListener("DOMContentLoaded", () => {
+    function scrollToElement(elementId) {
+        const element = document.querySelector(elementId);
+        if (element) {
+            window.scrollTo({
+                top: element.offsetTop - 60, // Ajuste para evitar sobreposição com o menu fixo
+                behavior: "smooth"
+            });
+        }
     }
-}
 
-const link1 = document.getElementById("link1");
-const link2 = document.getElementById("link2");
-const link3 = document.getElementById("link3");
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault(); // Evita o comportamento padrão do link
+            const targetId = link.getAttribute("href");
+            scrollToElement(targetId);
 
-link1.addEventListener('click', () => {
-    scrollToElement('.header');
-});
+            // Fecha o menu hambúrguer ao clicar em um link
+            document.getElementById("mobileMenu").classList.remove("menu-active");
+            document.getElementById("hamburger").classList.remove("open");
+        });
+    });
 
-link2.addEventListener('click', () => {
-    scrollToElement('.header', 1);
-});
+    // Toggle do menu hambúrguer
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-link3.addEventListener('click', () => {
-    scrollToElement('.column');
+    if (hamburger) {
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("menu-active");
+            hamburger.classList.toggle("open");
+        });
+    }
 });
