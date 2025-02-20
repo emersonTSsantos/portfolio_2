@@ -155,7 +155,7 @@ nav{
 /* Animação do ícone ao abrir */
 .open .bar1 {
     transform: rotate(50deg) translate( 9px, 5px);
-    margin-top: 20px;
+    margin-top: 60px;
     margin-left: 140px;
 }
 
