@@ -82,10 +82,6 @@ nav{
 
 .hamburger {
     display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    margin-right: 15%;
 }
 
 .hamburger div {
@@ -102,16 +98,23 @@ nav{
 }
 
 /* Responsividade */
-@media (width < 700px) {
+@media (width < 600px) {
 
     nav {
         max-width: 375px;
-        width: 110%;
+        width: 120%;
+        height: 14%;
         background-color: #18181B;
         position: fixed;
         top: 0;
         z-index: 1000;
     }
+
+    .btn-mobile {
+        padding: 16px;
+        font-size: 14px;
+    }
+
 
     .nav-links {
         flex-direction: column;
@@ -138,6 +141,9 @@ nav{
 
     .hamburger {
         display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
     }
 }
 
