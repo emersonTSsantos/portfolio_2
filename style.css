@@ -13,13 +13,9 @@
 img{
     width: 100%;
     display: flex;
-    border-radius: 10px;
-    margin-left: 30px;
+    margin: 0 auto;
 }
 
-a{
-    text-decoration: none;
-}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -104,14 +100,14 @@ nav{
 }
 
 /* Responsividade */
-@media (max-width: 900px) {
+@media (width < 900px) {
 
     nav {
-        background-color: #18181B;
+        background-color: #0f0fec;
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: 5px;
+        width: 85%;
         z-index: 1000;
     }
 
@@ -120,11 +116,11 @@ nav{
         flex-direction: column;
         position: absolute;
         top: 60px; /* Abaixo do menu */
-        right: 0;
-        width: 200px;
+        right: 0px;
+        width: 180px;
         background-color: #18181B;
         padding: 10px;
-        box-shadow: -4px 0 10px #1e40af;
+        box-shadow: -2px 0 10px #1e40af;
     }
 
 
@@ -206,6 +202,14 @@ header .content h1{
     line-height: 4rem;
 }
 
+@media (width < 900px) {
+    header .content h1 {
+        font-size: 2rem;
+        margin: 0;
+        line-height: 3rem;
+    }
+}
+
 header .content h1 span{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
@@ -214,7 +218,17 @@ header .content h1 span{
 header .content p{
     margin-bottom: 2rem;
     color: #ccc;
+    font-size: 20px;
 }
+
+@media (width < 600px) {
+    header .content p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+
 
 header .content .curriculo a{
     font-size: 20px;
@@ -224,7 +238,7 @@ header .image{
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header .image {
         margin: 0 auto;
     }
@@ -278,7 +292,7 @@ section .header{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .skill {
         grid-template-columns: 1fr;
         margin: 0 auto;
@@ -357,7 +371,7 @@ section .header{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .projects {
         grid-template-columns: 1fr;
         margin: 0 auto;
@@ -375,11 +389,11 @@ section .header{
     transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .projects .card{
         margin: 0 auto;
         margin-top: 30px;
-        width: 300px;
+        width: 100%;
     }
 }
 
@@ -521,7 +535,7 @@ footer .column > a:hover{
     }
 }
 
-@media (width < 768pxpx){
+@media (width < 768px){
     header .image::before{
         display: none;
     }
