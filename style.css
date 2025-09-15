@@ -175,7 +175,7 @@ nav{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     padding: 5rem 2rem;
 }
@@ -271,11 +271,11 @@ header .image::before{
     content: "o";
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 63%;
     transform: translateX(-50%);
     font-size: 40rem;
-    font-weight: 400;
-    line-height: 40rem;
+    font-weight: 400px;
+    line-height: 45rem;
     color: #1d4ed8;
     opacity: 0.2;
     z-index: -100;
@@ -284,6 +284,7 @@ header .image::before{
 header .image img{
     max-width: 600px;
     margin: auto;
+    margin-left: 80px;
 }
 
 section .header{
