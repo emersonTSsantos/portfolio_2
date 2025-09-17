@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Meu Portfólio</title>
 </head>
@@ -52,7 +54,7 @@
 
             </p>
             <div class="curriculo">
-                <a class="btn" href="https://docs.google.com/document/d/1-tFuq-QKJu5DWq9EdUqcqSQARJKhbssa/edit" target="_blank">
+                <a class="btn" href="https://docs.google.com/document/d/1NW2q1U-xYf88GmBKjh0dH5eESiMqwl1l/edit?usp=drive_link&ouid=111735812278558255286&rtpof=true&sd=true" target="_blank">
                     <i class="ri-eye-line view"></i> Currículo
                 </a>                
             </div>
@@ -65,6 +67,11 @@
 
     <section class="container">
         <h2 id="header" class="header">Habilidades</h2>
+            <!-- Botões -->
+                <div class="buttons">
+                    <button id="prev-btn" class="btn hidden">Anterior</button>
+                    <button id="next-btn" class="btn">Próximo</button>
+                </div>
 
                 <div id="skills-group-1" class="skill">
                     <div class="card" data-aos="fade-left">
@@ -87,9 +94,6 @@
                         <h4>React</h4>
                         <p>Desenvolvimento de interfaces declarativas com componentes reutilizáveis, estados, props, hooks, roteamento e gerenciamento de estados.</p>
                     </div>
-                </div>
-                
-                <div id="skills-group-2" class="skill hidden">
                     <div class="card" data-aos="fade-right">
                         <span><i class="devicon-cypressio-plain"></i></span>
                         <h4>Cypress</h4>
@@ -111,8 +115,75 @@
                         <p>Gerenciamento de bancos relacionais com consultas, joins, agregações, normalização, índices, triggers e transações para integridade dos dados.</p>
                     </div>
                 </div>
+                
+                    <div id="skills-group-2" class="skill hidden">
+                    <div class="card" data-aos="fade-right">
+                        <span><i class="devicon-django-plain colored"></i></span>
+                        <h4>Django</h4>
+                        <p>Desenvolvimento web robusto em Python com ORM, autenticação, administração e suporte a REST APIs.</p>
+                    </div>
+
+            <!-- Styled Components -->
+                    <div class="card" data-aos="fade-right">
+                        <span>
+                            <svg role="img" viewBox="0 0 24 24" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                            <title>styled-components</title>
+                            <path d="M12 .6C5.7.6.6 5.7.6 12s5.1 11.4 11.4 11.4S23.4 18.3 23.4 12 18.3.6 12 .6zm0 20.2c-4.9 0-8.8-3.9-8.8-8.8s3.9-8.8 8.8-8.8 8.8 3.9 8.8 8.8-3.9 8.8-8.8 8.8z"/>
+                            </svg>
+                        </span>
+                        <h4>Styled Components</h4>
+                        <p>Estilização moderna em React com CSS-in-JS, componentes dinâmicos e reutilizáveis.</p>
+                    </div>
+
+                <!-- Git -->
+                    <div class="card" data-aos="fade-right">
+                        <span><i class="ri-git-branch-line"></i></span>
+                        <h4>Git</h4>
+                        <p>Controle de versão distribuído para rastrear mudanças, colaborar em equipe e gerenciar projetos.</p>
+                    </div>
+
+                <!-- Sass -->
+                    <div class="card" data-aos="fade-right">
+                        <span><i class="devicon-sass-original colored"></i></span>
+                        <h4>Sass</h4>
+                        <p>Pré-processador CSS com variáveis, mixins, funções e maior produtividade na estilização.</p>
+                    </div>
+
+                <!-- AJAX -->
+                    <div class="card" data-aos="fade-right">
+                        <span><i class="devicon-javascript-plain colored"></i></span>
+                        <h4>AJAX</h4>
+                        <p>Comunicação assíncrona entre cliente e servidor para atualizar páginas sem recarregar.</p>
+                    </div>
+
+                <!-- Bootstrap -->
+                    <div class="card" data-aos="fade-right">
+                        <span><i class="devicon-bootstrap-plain colored"></i></span>
+                        <h4>Bootstrap</h4>
+                        <p>Framework CSS responsivo para desenvolvimento rápido com grid system e componentes prontos.</p>
+                    </div>
+
+                <!-- Gulp -->
+                    <div class="card" data-aos="fade-right">
+                        <span><i class="devicon-gulp-plain colored"></i></span>
+                        <h4>Gulp</h4>
+                        <p>Automação de tarefas em projetos front-end como minificação, compilação e live reload.</p>
+                    </div>
+
+                <!-- Power BI -->
+                    <div class="card" data-aos="fade-right">
+                        <span>
+                            <svg role="img" viewBox="0 0 24 24" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                            <title>Power BI</title>
+                            <path d="M22.2 2H1.8C.8 2 0 2.8 0 3.8v16.4C0 21.2.8 22 1.8 22h20.4c1 0 1.8-.8 1.8-1.8V3.8c0-1-.8-1.8-1.8-1.8zM3 19V5h18v14H3z"/>
+                            </svg>
+                        </span>
+                        <h4>Power BI</h4>
+                        <p>Ferramenta de Business Intelligence para visualização, análise de dados e criação de dashboards interativos.</p>
+                    </div>
+                </div>
     </section>
-    
+        
 
     <section id="projects"  class="container" data-aos="fade-right" data-aos-duration="2000">
         <h2 class="header">Projetos</h2>
@@ -345,26 +416,45 @@
 
 
 <script>
-        AOS.init(); // Inicializa AOS
-    
-        const nextBtn = document.getElementById("next-btn");
-        const prevBtn = document.getElementById("prev-btn");
+       AOS.init(); // Inicializa AOS
 
-        nextBtn.addEventListener("click", () => {
-            // Animar a saída do group-1
-            skillsGroup1.classList.add("exit-animation");
-            
-            // Após a animação, esconder o group-1 e mostrar o group-2
-            setTimeout(() => {
-                skillsGroup1.classList.add("hidden");
-                skillsGroup1.classList.remove("exit-animation");
+const skillsGroup1 = document.getElementById("skills-group-1");
+const skillsGroup2 = document.getElementById("skills-group-2");
+const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
 
-                skillsGroup2.classList.remove("hidden");
-                setTimeout(() => {
-                    skillsGroup2.classList.add("show");
-                }, 20); // Para garantir que a animação de entrada seja aplicada após a mudança de classe
-            }, 500); // Tempo de animação do group-1
-        });
+nextBtn.addEventListener("click", () => {
+  skillsGroup1.classList.add("exit-left");
+
+  setTimeout(() => {
+    skillsGroup1.classList.add("hidden");
+    skillsGroup1.classList.remove("exit-left");
+
+    skillsGroup2.classList.remove("hidden");
+    skillsGroup2.classList.add("enter-right");
+
+    // alternar botões
+    prevBtn.classList.remove("hidden");
+    nextBtn.classList.add("hidden");
+  }, 500);
+});
+
+prevBtn.addEventListener("click", () => {
+  skillsGroup2.classList.add("exit-left");
+
+  setTimeout(() => {
+    skillsGroup2.classList.add("hidden");
+    skillsGroup2.classList.remove("exit-left");
+
+    skillsGroup1.classList.remove("hidden");
+    skillsGroup1.classList.add("enter-right");
+
+    // alternar botões
+    prevBtn.classList.add("hidden");
+    nextBtn.classList.remove("hidden");
+  }, 500);
+});
+
 
 </script>
 
