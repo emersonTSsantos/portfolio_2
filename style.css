@@ -11,9 +11,17 @@
 }
 
 .container{
-    max-width: 1220px;
+    max-width: 1200px;
     margin: auto;
     padding: 3rem 1rem;
+}
+
+@media (width < 780px) {
+    .container {
+        max-width: 780px;
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 img{
@@ -30,8 +38,6 @@ body{
 
 nav{
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,11 +88,12 @@ nav{
 }
 
 .hamburger div {
+    
     width: 30px;
     height: 4px;
     background-color: white;
     transition: 0.3s;
-    margin-left: 120px;
+    
 }
 
 .mobile-menu a {
@@ -97,8 +104,10 @@ nav{
 /* Responsividade */
 @media (width < 780px) {
 
-    .container {
-        margin: 0 auto;
+    nav {
+        max-width: 780px;
+        width: 100%;
+        gap: 0;
     }
 
     .mobile-menu {
@@ -110,7 +119,7 @@ nav{
     }
 
     nav .btn-mobile{
-        font-size: 14px;
+        font-size: 16px;
         color: #fff;
         background-color: #1d4ed8;
         border-radius: 5px;
